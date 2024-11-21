@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
-import db from "./db/connection.js";
+// pings database
+import {} from "./db/connection.js";
 
 const PORT = process.env.PORT || 5050;
 const app = express();
@@ -12,3 +13,5 @@ app.use(express.json());
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
 });
+
+export default app;
